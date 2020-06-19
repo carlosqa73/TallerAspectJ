@@ -4,7 +4,7 @@ public aspect Logger {
 	
 	pointcut success() : call(* create*(..) );
     after() : success() {
-    //Aspecto ejemplo: solo muestra este mensaje después de haber creado un usuario 
+    //Aspecto ejemplo: solo muestra este mensaje despuï¿½s de haber creado un usuario 
     	System.out.println("**** User created ****");
     }
     
@@ -13,4 +13,8 @@ public aspect Logger {
     	System.out.println("****Transaccion realizada****");
     }
     
+    pointcut retiro(): call(* moneyWithdrawal());
+    after() : retiro(){
+    	System.out.println("****Retiro realizado****");
+    }
 }
