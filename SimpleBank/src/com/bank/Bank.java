@@ -1,5 +1,9 @@
 package com.bank;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -16,6 +20,8 @@ public class Bank {
     }
 
     public static void main(String[] args) {
+    	
+
         int opcion = 0;
         initBank();
         while(opcion != EXIT){
@@ -80,6 +86,7 @@ public class Bank {
         int id = Integer.valueOf(readConsole("Key: "));
         double money = Double.valueOf(readConsole("Dinero a depositar: "));
         users.get(id-1).setMoney(users.get(id-1).getMoney() + money);
+        
     }
     public static void moneyWithdrawal(){
         int id = Integer.valueOf(readConsole("Key: "));
