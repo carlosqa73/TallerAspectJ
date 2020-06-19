@@ -5,6 +5,6 @@ Carlos Quinonez\n
 Ricardo Vilcacundo\n
 Miguel Parra\n
 
-#Funcionamiento del pointcut success\n
+# Funcionamiento del pointcut success\n
 ![pointcut](/recursos/createuser.png)
 
